@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PELETEIRO'S SHOP</title>
+  <style>
+   
+   h1 {
+    margin-bottom: 100px;
+    font-size: 75px;
+   
+   }
+   #contenedorPrincipal {
+            text-align: center;
+            margin-bottom: 200px;
+            margin-top: 5px;
+            font-size: 25px
+        }
+        
+
+  #contenedorCarrito {
+    margin-bottom: 15000px;
+    text-align: center;
+    
+}
+    #lista-carrito {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #total {
+      font-weight: bold;
+    }
+    
+    body {
+      
+      font-family: Century, sans-serif;
+            margin: 30;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin-bottom: 300px;
+            margin-top: 100px;
+            background: linear-gradient(to right, #2980b9, #3498db);
+            color: #ffffff; 
+            
+        }
+    h2 { 
+      
+      text-align: left;
+      font-size: 50px;
+  
+}
+
+input  {
+  font-size: 18px; 
+            height: 40px; 
+            width: 300px;
+            margin-bottom: 10px; 
+            align-items: center;
+}
+      
+button {
+  font-size: 18px; 
+            height: 40px; 
+            width: 300px;
+            margin-bottom: 10px; 
+
+}
+p {
+  font-size: 25px;
+}
+
+ul {
+  font-size: 25px;
+}
+        
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PELETEIRO'S SHOP</h1>
+  </header>
+<div id="contenedorPrincipal">
+  <main>
+    <section id="productos">
+      <label for="nombreProducto">Nombre del Producto:</label>
+      <input type="text" id="nombreProducto" placeholder="Ingrese el nombre del producto">
+      <br>
+      <label for="precioProducto">Precio del Producto:</label>
+      <input type="number" id="precioProducto" placeholder="Ingrese el precio del producto">
+      <br>
+      <label for="cantidadProducto">Cantidad:</label> 
+      <input type="number" id="cantidadProducto" placeholder="Ingrese la cantidad de productos">
+      <p id="espacio"></p>
+      <br>
+      <button id="agregarProductoBtn">Agregar al Carrito</button>
+      
+
+    </section>
+  </div>
+  <section id="productos">
+    <h2>PRODUCTOS MAS VENDIDOS</h2>
+    <ul class="lista-productos">
+        <li>Whisky Blue Label - Precio: $300 </li>
+
+        <li>Mayonesa - Precio: $80 </li>
+        
+        <li>Alfajor - Precio: $30 </li>
+
+        <li>Coca-cola grande - Precio: $130 </li>
+
+        <li>Redbull - Precio: $120 </li>
+       
+    </ul>
+</section>
+
+
+    <div id="contenedorCarrito">
+  <section id="carrito">
+      <h2>CARRITO DE COMPRAS</h2>
+      <ul id="lista-carrito">
+        
+      </ul>
+      <p id="total">Total: $0</p>
+      
+      <button id="limpiarCarritoBtn">Limpiar Carrito</button>
+      <button id="finalizarCompraBtn">Finalizar Compra</button>
+    </section>
+  </div>
+  </main>
+
+  <link rel="stylesheet" href="awesomplete.css" />
+  <script src="awesomplete.js" async></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.com/libraries/awesomplete"></script>
+  <script src="carrito.js"></script>
+</body>
+</html>
+
